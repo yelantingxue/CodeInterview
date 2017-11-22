@@ -16,6 +16,7 @@ import chap2.interview7.Interview7BinaryTree;
 import chap2.interview7.Interview7Q1;
 import chap2.interview8.Interview8BinaryTree;
 import chap2.interview8.Interview8Q1;
+import chap2.interview9.Inter9Queue;
 import junit.framework.TestCase;
 
 public class Chapter2Test{
@@ -166,6 +167,25 @@ public class Chapter2Test{
 		}else {
 			System.out.println(tree.value);
 		}
+	}
+	
+	@Test
+	public void inter9Q1Test() {
+		
+		Inter9Queue<Integer> queue = new Inter9Queue<>();
+		queue.appendTail(1);
+		queue.appendTail(2);
+		queue.appendTail(3);
+		System.out.println(queue.deleteHead());
+		System.out.println(queue.deleteHead());
+		queue.appendTail(7);
+		queue.appendTail(5);
+		System.out.println(queue.deleteHead());
+		queue.appendTail(8);
+		System.out.println(queue.deleteHead());
+		System.out.println(queue.deleteHead());
+		System.out.println(queue.deleteHead());
+		System.out.println(queue.deleteHead());
 	}
 
 }
