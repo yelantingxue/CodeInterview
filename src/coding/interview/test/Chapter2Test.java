@@ -14,6 +14,8 @@ import chap2.interview6.Interview6Node;
 import chap2.interview6.Interview6Q1;
 import chap2.interview7.Interview7BinaryTree;
 import chap2.interview7.Interview7Q1;
+import chap2.interview8.Interview8BinaryTree;
+import chap2.interview8.Interview8Q1;
 import junit.framework.TestCase;
 
 public class Chapter2Test{
@@ -113,6 +115,57 @@ public class Chapter2Test{
 			System.out.print(inList.get(i).value + ", ");
 		}
 		
+	}
+	
+	@Test
+	public void inter8Q1Test() {
+		
+		Interview8BinaryTree root = new Interview8BinaryTree(1);
+		Interview8BinaryTree node2 = new Interview8BinaryTree(2);
+		Interview8BinaryTree node3 = new Interview8BinaryTree(3);
+		Interview8BinaryTree node4 = new Interview8BinaryTree(4);
+		Interview8BinaryTree node5 = new Interview8BinaryTree(5);
+		Interview8BinaryTree node6 = new Interview8BinaryTree(6);
+		Interview8BinaryTree node7 = new Interview8BinaryTree(7);
+		Interview8BinaryTree node8 = new Interview8BinaryTree(8);
+		Interview8BinaryTree node9 = new Interview8BinaryTree(9);
+		
+		/**
+		 * Test case for plain binary tree.
+		 */
+//		root.left = node2;
+//		root.right = node3;
+//		node2.left = node4;
+//		node2.right = node5;
+//		node2.parent = root;
+//		node3.left = node6;
+//		node3.right = node7;
+//		node3.parent = root;
+//		node4.parent = node2;
+//		node5.left = node8;
+//		node5.right = node9;
+//		node5.parent = node2;
+//		node6.parent = node3;
+//		node7.parent = node3;
+//		node8.parent = node5;
+//		node9.parent = node5;
+		
+		/**
+		 * Test case for binary trees who don't have left node.
+		 */
+//		root.right = node2;
+//		node2.right = node3;
+//		node2.parent = root;
+//		node3.right = node4;
+//		node3.parent = node2;
+//		node4.parent = node3;
+		
+		Interview8BinaryTree tree = Interview8Q1.getNext(root);
+		if(tree == null) {
+			System.out.println("This node is the last node in inorder traversal.");
+		}else {
+			System.out.println(tree.value);
+		}
 	}
 
 }
