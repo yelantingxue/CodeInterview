@@ -17,6 +17,7 @@ import chap2.interview7.Interview7Q1;
 import chap2.interview8.Interview8BinaryTree;
 import chap2.interview8.Interview8Q1;
 import chap2.interview9.Inter9Queue;
+import chap2.interview9.QueueToStack;
 import junit.framework.TestCase;
 
 public class Chapter2Test{
@@ -186,6 +187,24 @@ public class Chapter2Test{
 		System.out.println(queue.deleteHead());
 		System.out.println(queue.deleteHead());
 		System.out.println(queue.deleteHead());
+	}
+	
+	@Test
+	public void queueToStackTest() {
+		
+		QueueToStack<Integer> stack = new QueueToStack<>();
+		
+		stack.push(1);
+		stack.push(2);
+		stack.push(3);
+		System.out.println(stack.pop());
+		stack.push(4);
+		stack.push(5);
+		System.out.println(stack.pop());
+		System.out.println(stack.pop());
+		System.out.println(stack.pop());
+		System.out.println(stack.pop());
+		System.out.println(stack.pop());
 	}
 
 }
