@@ -7,6 +7,7 @@ import java.util.Random;
 
 import org.junit.Test;
 
+import chap2.interview10.Interview10Q1;
 import chap2.interview3.Question1;
 import chap2.interview3.Question2;
 import chap2.interview5.Interview5Q1;
@@ -205,6 +206,21 @@ public class Chapter2Test{
 		System.out.println(stack.pop());
 		System.out.println(stack.pop());
 		System.out.println(stack.pop());
+	}
+	
+	@Test
+	public void Inter10Q1Test() {
+		
+		double Fib1StartTime = System.currentTimeMillis();
+		System.out.println(Interview10Q1.Fibonacci1(50));
+		double Fib1EndTime = System.currentTimeMillis();
+		
+		double Fib2StartTime = System.currentTimeMillis();
+		System.out.println(Interview10Q1.Fibonacci2(50));
+		double Fib2EndTime = System.currentTimeMillis();
+		
+		System.out.println(Fib1EndTime - Fib1StartTime);
+		System.out.println(Fib2EndTime - Fib2StartTime);
 	}
 
 }
