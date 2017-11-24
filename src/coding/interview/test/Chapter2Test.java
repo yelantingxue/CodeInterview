@@ -8,6 +8,7 @@ import java.util.Random;
 import org.junit.Test;
 
 import chap2.interview10.Interview10Q1;
+import chap2.interview11.Interview11Q1;
 import chap2.interview3.Question1;
 import chap2.interview3.Question2;
 import chap2.interview5.Interview5Q1;
@@ -221,6 +222,12 @@ public class Chapter2Test{
 		
 		System.out.println(Fib1EndTime - Fib1StartTime);
 		System.out.println(Fib2EndTime - Fib2StartTime);
+	}
+	
+	@Test
+	public void Inter11Q1Test() {
+		int[] a = {1,1,0,1,1};
+		System.out.println(Interview11Q1.minRotatedArray(a));
 	}
 
 }
