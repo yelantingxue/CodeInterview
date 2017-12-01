@@ -10,6 +10,7 @@ import org.junit.Test;
 import chap2.interview10.Interview10Q1;
 import chap2.interview11.Interview11Q1;
 import chap2.interview12.Interview12Q1;
+import chap2.interview12.Interview12Q1S2;
 import chap2.interview3.Question1;
 import chap2.interview3.Question2;
 import chap2.interview5.Interview5Q1;
@@ -226,40 +227,6 @@ public class Chapter2Test {
 	public void Inter11Q1Test() {
 		int[] a = { 1, 1, 0, 1, 1 };
 		System.out.println(Interview11Q1.minRotatedArray(a));
-	}
-
-	@Test
-	public void Inter12Q1Test() {
-		char[][] chrMatrix1 = { { 'a', 'b', 't', 'g' }, { 'c', 'f', 'c', 's' }, { 'j', 'd', 'e', 'h' } };
-
-		char[][] chrMatrix2 = { { 'a', 'b', 't', 'g' } };
-
-		char[][] chrMatrix3 = { { 'a', 'b', 'b', 't' }, { 'g', 'c', 'f', 'c' }, { 'j', 'd', 'h', 'e' } };
-
-		char[][] chrMatrix4 = { {} };
-
-		char[][] chrMatrix5 = {};
-
-		char[][] chrMatrix6 = { { 'a', 'b', 'c', 'e' }, { 's', 'f', 'c', 's' }, { 'a', 'd', 'e', 'e' } };
-		
-		//ABCEHJIG
-		//SFCSLOPQ
-		//ADEEMNOE
-		//ADIDEJFM
-		//VCEIFGGS
-		char[][] chrMatrix7 = { { 'a', 'b', 'c', 'e', 'h', 'j', 'i', 'g' }, 
-								{ 's', 'f', 'c', 's', 'l', 'o', 'p', 'q' }, 
-								{ 'a', 'd', 'e', 'e', 'm', 'n', 'o', 'e' }, 
-								{ 'a', 'd', 'i', 'd', 'e', 'j', 'f', 'm' }, 
-								{ 'v', 'c', 'e', 'i', 'f', 'g', 'g', 's' }};
-		
-		char[][] chrMatrix8 = { { 'a', 'a', 'a', 'a' }, { 'a', 'a', 'a', 'a' }, { 'a', 'a', 'a', 'a' } };
-		
-		char[][] chrMatrix9 = { { 'a' } };
-
-		String str = "b";
-
-		System.out.println(Interview12Q1.findPath(chrMatrix9, str));
 	}
 
 }

@@ -44,9 +44,7 @@ public class Interview12Q1 {
 	}
 	
 	/**
-	 * One interesting and important thing is that if a hasPath() method (B) 
-	 * is finished and return to the hasPath() method (A) that invoked it, 
-	 * the boolean matirx visited[][], will return to the A's status.
+	 * 
 	 * @param chr: Character Matrix.
 	 * @param str: The path to be found in character matrix.
 	 * @param row: The row of the character.
@@ -123,6 +121,12 @@ public class Interview12Q1 {
 				}
 			}
 		}
+		
+		/**
+		 * If one character is not in the path, reset this character, 
+		 * so that we can add this character to the path later, if we need.
+		 */
+		visited[row][col] = false;
 		return false;
 	}
 }
