@@ -2,6 +2,13 @@ package chap2.interview3;
 
 public class Question2 {
 	
+	/**
+	 * 
+	 * @param a
+	 * @return other number: Input is valid, and there are duplicated numbers in the entering array. 
+	 * 						 Return value is the duplicated number.
+	 * @return -1: Input is invalid, or there is no duplicated numbers in the entering array.
+	 */
 	public static int repeatedNumber(int[] a) {
 		if(a.length == 0) {
 			return -1;

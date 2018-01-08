@@ -4,6 +4,11 @@ import java.util.Arrays;
 
 public class Question1 {
 	
+	/**
+	 * @param a
+	 * @return true: Input is valid, and there are duplicated numbers in the entering array.
+	 * @return false: Input is invalid, or there is no duplicated numbers in the entering array.
+	 */
 	public static boolean repeatedNumber1(int [] a) {
 		
 		if(a.length == 0) {
