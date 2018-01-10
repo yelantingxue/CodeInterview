@@ -9,11 +9,26 @@ public class Interview5Q1 {
 		}
 		
 		String[] strArr = str.split(" ");
-		if(strArr.length == 1) {
-			return str;
+		String replaceStr = "";
+		
+		//Input string only consists spaces.
+		if(strArr.length == 0) {
+			for(int i = 0; i < str.length(); i++) {
+				replaceStr += "%20";
+			}
+			return replaceStr;
 		}
 		
-		String replaceStr = "";
+		//The last char in the input string is space.
+		if(str.charAt(str.length()-1) == ' ') {
+			strArr[strArr.length-1] += "%20";
+		}
+		
+		if(strArr.length == 1) {
+			return strArr[0];
+		}
+		
+		
 		for(int i = 0; i < strArr.length; i++) {
 			if(i != strArr.length - 1) {
 				replaceStr = replaceStr + strArr[i] + "%20";
