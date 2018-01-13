@@ -17,7 +17,7 @@ public class Interview17Q1 {
 		int[] number = new int[n];
 		
 		while(!incrementAndOverflow(number)) {
-			printStringBuilderNumber(number);
+			printArrayNumber(number);
 		}
 		
 	}
@@ -55,7 +55,7 @@ public class Interview17Q1 {
 		return isOverFlow;
 	}
 	
-	private static void printStringBuilderNumber(int[] num) {
+	private static void printArrayNumber(int[] num) {
 		
 		boolean flag = false;
 		
@@ -93,7 +93,7 @@ public class Interview17Q1 {
 	private static void incrementAndPrint(int[] number, int position) {
 		
 		if(position == number.length - 1) {
-			printStringBuilderNumber(number);
+			printArrayNumber(number);
 			return;
 		}
 		
