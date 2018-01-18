@@ -139,11 +139,16 @@ public class Interview20S1 {
 
 	/**
 	 * Solution 2: Regular Expression match.
-	 * 
+	 * But it seemed that this method cannot be used.
 	 * @param str
 	 * @return
 	 */
 	public static boolean isNumetricRegExpMatch(String str) {
-		return str.matches("[+-]?[0-9]{0,}(\\\\.?[0-9]{1,})?([Ee][+-]?[0-9]{1,})?");
+		
+		//Cannot pass test6.
+//		return str.matches("[+-]?[0-9]{0,}(\\\\.?[0-9]{1,})?([Ee][+-]?[0-9]{1,})?");
+		
+		//Cannot pass test17.
+		return str.matches("[\\+-]?[0-9]*(\\.[0-9]*)?([eE][\\+-]?[0-9]+)?");
 	}
 }

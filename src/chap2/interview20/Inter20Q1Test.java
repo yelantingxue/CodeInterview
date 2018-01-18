@@ -32,6 +32,7 @@ public class Inter20Q1Test {
 	@Test
 	public void test6() {
 		System.out.println(Interview20S1.isNumetric("600."));
+		System.out.println(Interview20S1.isNumetricRegExpMatch("600."));
 	}
 	
 	@Test
@@ -87,6 +88,7 @@ public class Inter20Q1Test {
 	@Test
 	public void test17() {
 		System.out.println(Interview20S1.isNumetric(".e1"));
+		System.out.println(Interview20S1.isNumetricRegExpMatch(".e1"));
 	}
 	
 	@Test
