@@ -12,8 +12,14 @@ public class Interview38Q1 {
 		permutationCore(strCharArray, 0);
 	}
 	
+	/**
+	 * 
+	 * @param array
+	 * @param index : Keep the character at "index" fixed and arrange the character behind the "index".
+	 */
 	private static void permutationCore(char[] array, int index) {
 		
+		//Reach the end of the array.
 		if(index >= array.length-1) {
 			System.out.println(String.valueOf(array));
 			return;
